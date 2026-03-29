@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+/* Header Styles */
+
+header {
+    background-color: #2e3e4b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+    height: 100px;
+}
+
+header h1  {
+    font-family: 'Sekuya', sans-serif;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: yellow;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#pokemon-search {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #697183b6;
+    color: rgb(240, 240, 240);
+}
+
+#pokemon-search::placeholder {
+    color: rgb(240, 240, 240);
+}
+
+
+#search-button:hover {
+    color: yellow;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 140px;
+    flex-grow: 1;
+    padding: 20px;
+    min-height: calc(100vh - 120px);
+    width: 100%;
+    background-color: #32436696;
+    padding-top: 30px;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #2e3e4b;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+footer p {
+    margin: 0;
+    font-size: 24px;
+}
+
+footer img {
+    height: 180px;
+    width: 180px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header img {
+        height: 60px;
+    }
+
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer img {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+
+
+
+

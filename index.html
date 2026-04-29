@@ -1,51 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/pokedex.png">
-    <link rel="stylesheet" href="../css_order/card.css">
-    <link rel="stylesheet" href="../css_order/main.css">
-    <link rel="stylesheet" href="../css_order/spinner.css">
-    <link rel="stylesheet" href="../css_order/dialog.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/pokedex.png" />
+    <link rel="stylesheet" href="css_order/card.css" />
+    <link rel="stylesheet" href="css_order/main.css" />
+    <link rel="stylesheet" href="css_order/spinner.css" />
+    <link rel="stylesheet" href="css_order/dialog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>Pokedex</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-title">
-            <img src="../img/pokedex.png" alt="Pokedex Icon">
-            <h1>Pokedex</h1>
-        </div>
-        <div class="search-container">
-            <input type="text" id="pokemon-search" placeholder="Search Pokemon...">   
-        </div>
+      <div class="header-title">
+        <img src="img/pokedex.png" alt="Pokedex Icon" />
+        <h1>Pokedex</h1>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="pokemon-search"
+          placeholder="Search Pokemon..."
+        />
+      </div>
     </header>
     <main>
-        <section>
-            <div id="pokedex-container">
-                
-            </div>
-            <div class="load-more-container" id="more-pokemon-container">
-                <button id="load-more-btn">Load More</button>
-            </div>
-        </section>
+      <section>
+        <div id="pokedex-container"></div>
+        <div class="load-more-container" id="more-pokemon-container">
+          <button id="load-more-btn">Load More</button>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>Copyright &copy; 2026</p>
-        <img src="../img/waldi.png" alt="">
-        <p>Created by Waldi</p>
+      <p>Copyright &copy; 2026</p>
+      <img src="img/waldi.png" alt="" />
+      <p>Created by Waldi</p>
     </footer>
-    <script src="../js_order/html.js"></script>
-    <script src="../js_order/main.js"></script>
-    
+    <script src="js_order/html.js"></script>
+    <script src="js_order/main.js"></script>
+
     <dialog id="pokemon-modal" onclick="closePokemonDetail(event)">
-        <div id="modal-content">
-            
-        </div>
+      <div id="modal-content"></div>
     </dialog>
-</body>
+  </body>
 </html>
